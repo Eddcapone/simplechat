@@ -1,4 +1,5 @@
 <?php
+	include "session.php";
 
 	//Diese Version speichert neuen Inhalt am Anfang der Datei
 
