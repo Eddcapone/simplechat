@@ -13,7 +13,7 @@
     <title>Login Page</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="css/login.css" media="screen">
+    <link rel="stylesheet" href="css/loginNightly.css" media="screen">
 	
 </head>
 <body id="dashboard">
