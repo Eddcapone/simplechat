@@ -17,11 +17,13 @@
 	
 </head>
 <body id="dashboard">
+		<div>
+			<button type="button" id="nightmode" onclick = "ale()">Toggle Nightmode</button>
+		</div>
     <div class="col-lg-4 col-lg-offset-4" id="main">
         <div id="überschrift">
             <h1> Login </h1>
         </div>
-
         <div id="login_box">
             <div id="login_box_p1">
                 <h4> Login </h4>
@@ -48,7 +50,12 @@
             </div>
         </div>
     </div>
-
+	<script>
+			function ale () { 
+					alert("HI");
+				}
+			//document.getElementById("nightmode").onclick = ale;
+	</script>
     <script src="scripts/jquery.js"></script>
 
     <?php 
