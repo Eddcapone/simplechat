@@ -31,6 +31,7 @@ switch($cmd)
 function check_login()
 {
     global $zugangsdaten, $post_username, $post_passwort;
+    $err_string = "";
     
     foreach ($zugangsdaten as $name => $passwort)
     {       
@@ -51,7 +52,7 @@ function check_login()
         }
         else
         {
-            return "Der Benutzer $post_username ist nicht in der Datenbank vorhanden!";
+            //$err_string.= "Der Benutzer $post_username ist nicht in der Datenbank vorhanden!";
         }
     } 
 }

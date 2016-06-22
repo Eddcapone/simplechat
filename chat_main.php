@@ -1,14 +1,13 @@
 <?php
-	include "session.php";
-
+    include "session.php";
 ?>
 <html>
 <head>
-    <meta http-equiv="refresh" content="2">
+<!--    <meta http-equiv="refresh" content="3">-->
 </head>
 <body>
     <table>
-            <?php include 'chat_content.php' ?>
+        <?php include 'chat_content.php' ?>
     </table>
 </body>
 </html>

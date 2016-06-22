@@ -1,9 +1,11 @@
-﻿body {
-	font-family: Arial, Calibri, Corbel;
-	background-color:#f5f5dc;
-	
-	}
-		
+body {
+    font-family: Arial, Calibri, Corbel;
+    background-color:#f5f5dc;
+}
+
+td.inhalt {
+    margin-left: 200px;
+}
 		
 a {
 color: green;
