@@ -1,1 +1,0 @@
-wenn das Login wieder eingebaut werden soll, muss die Datei "session.php" in jede Page eingebunden werden.

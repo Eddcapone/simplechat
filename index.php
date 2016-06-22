@@ -1,9 +1,9 @@
+<!DOCTYPE html>
+
 <?php
     session_start();
 ?>
 
-<!DOCTYPE html>
-<!-- Diese Datei in "index.php" umbenennen damit es wieder funzt -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="css/login.css" media="screen">
+    
+    <script src="scripts/jquery.js"></script>
 	
 </head>
 <body id="dashboard">
@@ -29,12 +31,9 @@
 
             <div id="login_box_p2">
                 <div id="login">
-                    <form method="POST" name="login_form" action="index.php">
-
-                        <input type="text" name="username" value="" placeholder="username" class="input_text"></input>
-                        <input type="password" name="password" value="" placeholder="password" class="input_text"></input>
-                        <button type="submit" class="btn"> Go </button>
-                    </form>
+                    <input type="text" name="username" value="" placeholder="username" class="input_text"></input>
+                    <input type="password" name="password" value="" placeholder="password" class="input_text"></input>
+                    <button id="login" type="submit" class="btn"> Go </button>
                 </div>
             </div>
         </div>
@@ -50,44 +49,54 @@
     </div>
 
     <script src="scripts/jquery.js"></script>
-
-    <?php 
-        
-
-    
-        if (isset($_POST['username'] ) && isset($_POST['password']))
-        {
-            $username 	= $_POST['username'];
-            $password 	= $_POST['password'];
-
-            $pw 	= "admin";
-            $user	= "admin";
-
-            if ($username == $user && $password == $pw)
-            {	
-                $_SESSION['eingeloggt'] = 'logged in';
-                $_SESSION['username'] = $username;
-
-                header("Location: chat.php");
-                exit();
-            } 
-            else 
-            {
-                $_SESSION['eingeloggt'] = 'not logged in';
-
-                if ($username != '' || $password  != '')
-                {
-                    echo "<script type='text/javascript'>\n";
-                    echo "jQuery('#login_error').css('display','block');\n";
-                    echo "</script>\n";
-                }
-            }
-        }
-    ?>
 	
     <script type='text/javascript'>
         var main = function()
         {
+            
+            $("button#login").click
+            (
+                function()
+                {
+                    var name       = $("input[name=username]").val();
+                    var passwort   = $("input[name=password]").val();
+
+                    console.log("NAME = ", name);
+                    console.log("PW = ", passwort);
+
+                    if (name != "" && passwort != "")
+                    {
+                        $.ajax
+                        (
+                            {
+                                url:    "ajax.php",
+                                type:   "POST",
+                                data:
+                                {
+                                    cmd:        "check_login",
+                                    passwort:   passwort,
+                                    name:       name
+                                },
+                                success: function (response)
+                                {
+                                    if (response === "Anmeldung erfolgreich!")
+                                    {
+                                        console.log("Anmeldung erfolgreich");
+                                        $("div#login_error").css("display","none");
+                                        window.location.replace("chat.php");
+                                    }
+                                    else
+                                    {
+                                        console.log("Anmeldung fehlgeschlagen");
+                                        $("div#login_error").css("display","block");
+                                    }
+                                }
+                            }
+                        );
+                    }
+                }
+            );
+            
             $('.close').click
             (
                 function()

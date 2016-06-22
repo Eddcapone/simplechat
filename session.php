@@ -1,13 +1,10 @@
 <?php
 
-// each client should remember their session id for EXACTLY 1 hour
-session_set_cookie_params(1);		//1 = 1 Stunde
-
+session_set_cookie_params(1);		//1 = 1 Stunde      // each client should remember their session id for EXACTLY 1 hour
 session_start();
 
-//echo $_SESSION["eingeloggt"];
 
-if (isset($_SESSION['eingeloggt']) && $_SESSION['eingeloggt'] == 'logged in')
+if (isset($_SESSION['eingeloggt']) && $_SESSION['eingeloggt'] == '1')
 {
     $user = $_SESSION['username'];
 }
