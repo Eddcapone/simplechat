@@ -25,7 +25,7 @@
 <form method="post" action="create_content.php" name="config_form">
     <div class="col-lg-6 col-lg-offset-3" id="main">
 
-        <iframe src="chat_main.php" id="mydiv_inhalt">
+        <iframe src="chat_main.php#footer" id="mydiv_inhalt">
             <?php include "chat_main.php"; ?>
         </iframe>
 
