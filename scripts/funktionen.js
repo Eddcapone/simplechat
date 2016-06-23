@@ -58,7 +58,7 @@ function send_message()
     }
 
 
-    console.log("input gedrückt");
+//    console.log("input gedrückt");
 
     $("input[name=nachricht]").val("");
     $("input[name=nachricht]").focus();
