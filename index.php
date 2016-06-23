@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <script src="scripts/jquery.js"></script>
 	<link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
-    <link rel="stylesheet" href="css/login.css" media="screen">
 	
 </head>
 <body id="dashboard">
