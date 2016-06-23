@@ -11,9 +11,9 @@ $post_passwort = filter_input(INPUT_POST, "passwort");
 //Später realisiere ich es eventuell mit Datenbanken
 $zugangsdaten = array   
 (
-    "d"=>"d",
-    "Eddy"=>"MeinPW",
-    "Joel"=>"Joel123"
+    "d"     =>  "d",
+    "Eddy"  =>  "MeinPW",
+    "Joel"  =>  "Joel123"
 );
 
 

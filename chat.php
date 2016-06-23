@@ -27,6 +27,5 @@
             <input type="submit" name="send">
         </div>
     </div> 
- 
 </body>
 </html>

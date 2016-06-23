@@ -16,7 +16,7 @@ function main()
         "click",
         function()
         {
-            send_message()
+            send_message();
         }
     );
         
@@ -24,33 +24,39 @@ function main()
     (
         function(event)
         {
-            console.log("eventKeycode = ", event.keyCode);
-            if (event.keyCode == 13)
+//            console.log("eventKeycode = ", event.keyCode);
+            if (event.keyCode == 13)    //Wenn der Enter Button gedrückt wurde und das Feld den Fokus hat
             {
-                send_message()
+                send_message();
             }
         }
     );
-        
-
 }
 
 function send_message()
 {
     $nachricht = $("input[name=nachricht]").val();
 
-    $.ajax
-    (
-        {
-            url: "ajax.php",
-            type: "POST",
-            data: 
+    if ($nachricht != "")       //Nachrichten nur abschicken wenn diese nicht leer sind.
+    {
+        $.ajax
+        (
             {
-                cmd: "create_entry",
-                message: $nachricht
+                url: "ajax.php",
+                type: "POST",
+                data: 
+                {
+                    cmd: "create_entry",
+                    message: $nachricht
+                }
             }
-        }
-    );
+        );
+    }
+    else
+    {
+        //Wenn die Nachricht leer ist, sollte jetzt eine Messagebox angezeigt werden.
+    }
+
 
     console.log("input gedrückt");
 

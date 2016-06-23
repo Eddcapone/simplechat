@@ -33,7 +33,7 @@
                 <div id="login">
                     <input type="text" name="username" value="" placeholder="username" class="input_text"></input>
                     <input type="password" name="password" value="" placeholder="password" class="input_text"></input>
-                    <button id="login" type="submit" class="btn"> Go </button>
+                    <button type="submit" name="login" class="btn"> Go </button>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
         var main = function()
         {
             
-            $("button#login").click
+            $("button[name=login]").click
             (
                 function()
                 {
