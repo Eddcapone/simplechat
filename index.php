@@ -13,17 +13,17 @@
     <title>Login Page</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="css/login.css" media="screen">
-    
     <script src="scripts/jquery.js"></script>
+	<link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
+    <link rel="stylesheet" href="css/login.css" media="screen">
 	
 </head>
 <body id="dashboard">
+
     <div class="col-lg-4 col-lg-offset-4" id="main">
         <div id="überschrift">
             <h1> Login </h1>
         </div>
-
         <div id="login_box">
             <div id="login_box_p1">
                 <h4> Login </h4>
@@ -47,7 +47,12 @@
             </div>
         </div>
     </div>
-
+	<script>
+			function ale () { 
+					alert("HI");
+				}
+			//document.getElementById("nightmode").onclick = ale;
+	</script>
     <script src="scripts/jquery.js"></script>
 	
     <script type='text/javascript'>
@@ -107,5 +112,30 @@
         };
         $(document).ready(main);	
     </script>
+	<script>
+		if(localStorage.getItem("smpchtnightmode")==1){
+		 
+			var x = document.getElementById("mystyle");
+			x.href="css/loginNightly.css";
+		}else{
+			var x = document.getElementById("mystyle");
+			x.href="css/loginDay.css";
+		}
+	</script>
+	<button type="button" id="smpchtnightmode" onclick = "neuerstyle()">Toggle Nightmode</button>
+	
+	<script>
+		function neuerstyle() {
+		 if(localStorage.getItem("smpchtnightmode")==1){
+				localStorage.setItem("smpchtnightmode", "0");				
+				var x = document.getElementById("mystyle");
+				x.href="css/loginDay.css";
+			}else{
+				localStorage.setItem("smpchtnightmode", "1");
+				var x = document.getElementById("mystyle");
+				x.href="css/loginNightly.css";
+			}
+		}
+	</script>
 </body>
 </html>

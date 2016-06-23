@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<title> Überschriften </title>
+	<link rel="stylesheet" id="mystyle" href="css/login.css" media="screen">
+</head>
+
+<body>
+	
+	<script>
+			if(localStorage.getItem("smpchtnightmode")==1){
+		 
+				var x = document.getElementById("mystyle");
+				x.href="css/loginNightly.css";
+			}else{
+				var x = document.getElementById("mystyle");
+				x.href="css/login.css";
+			}
+	</script>
+	<button type="button" onclick = "neuerstyle()">Toggle Nightmode</button>
+	
+	<script>
+		function neuerstyle() {
+		 if(localStorage.getItem("smpchtnightmode")==1){
+				localStorage.setItem("smpchtnightmode", "0");				
+				var x = document.getElementById("mystyle");
+				x.href="css/login.css";
+			}else{
+				localStorage.setItem("smpchtnightmode", "1");
+				var x = document.getElementById("mystyle");
+				x.href="css/loginNightly.css";
+			}
+		}
+	</script>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	<button type="button" id="cookietest" onclick = "cookietest()">Toggle cookietest</button>
+	
+	<script>
+		function cookietest() {
+			localStorage.setItem("nightmode", "1");
+		}
+	</script>
+	
+	<button type="button" id="cookietest2" onclick = "cookietest2()">Toggle cookietest2</button>
+	
+	<script>
+		function cookietest2() {
+			var x = localStorage.getItem("nightmode");
+			document.write(x);
+			}
+	</script>
+	<script>	
+		function readCookie(name) {
+				name += '=';
+				for (var ca = document.cookie.split(/;\s*/), i = ca.length - 1; i >= 0; i--)
+					if (!ca[i].indexOf(name))
+				return ca[i].replace(name, '');
+		}
+	</script>	
+</body>
+</html>
