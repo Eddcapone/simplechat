@@ -1,39 +1,32 @@
+<!DOCTYPE html>
 <?php 
     include "session.php";
-    $this_page = basename(__FILE__);
-    setcookie("last_page", $this_page);
 ?>
 
-<!DOCTYPE html>
 <html>
 <head>
-
-    <style>
-        #chat_entry
-        {
-            padding-right:20px;
-        }
-    </style>
-	
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/funktionen.js"></script>
 </head>
 <body>
 
-<p hidden='true' id='page'><?php echo $this_page ?></p>
 <!-- <?php include 'language.php';?> -->
 
 
-<form method="post" action="create_content.php" name="config_form">
     <div class="col-lg-6 col-lg-offset-3" id="main">
 
+        <div class="logout" id="logout">Logout</div>
+        
         <iframe src="chat_main.php" id="mydiv_inhalt">
             <?php include "chat_main.php"; ?>
         </iframe>
 
-        <div id="mydiv_buttons">
-            <input type="text" name="inputfield">
-            <input type="submit">
+        <div>
+            <input type="text" name="nachricht">
+            <input type="submit" name="send">
         </div>
     </div> 
-</form>
+ 
 </body>
 </html>
