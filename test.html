@@ -7,7 +7,14 @@
 	<link rel="stylesheet" id="tes" href="css/login.css" media="screen">
 </head>
 
-<body> 
+<body>
+	<script>
+		if(true){
+			var x = document.getElementById("tes");
+			x.href="css/loginNightly.css";
+			document.write("test");
+		}
+	</script>
 	<button type="button" id="nightmode" onclick = "neuerstyle()">Toggle Nightmode</button>
 	
 	<script>
@@ -16,5 +23,30 @@
 			x.href="css/loginNightly.css";
 		}
 	</script>
+	 
+	<button type="button" id="cookietest" onclick = "cookietest()">Toggle cookietest</button>
+	
+	<script>
+		function cookietest() {
+			document.cookie = "nightmode=testtest; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+		}
+	</script>
+	
+	<button type="button" id="cookietest2" onclick = "cookietest2()">Toggle cookietest2</button>
+	
+	<script>
+		function cookietest2() {
+			var x = readCookie(nightmode);
+			document.write(x);
+			}
+	</script>
+	<script>	
+		function readCookie(name) {
+				name += '=';
+				for (var ca = document.cookie.split(/;\s*/), i = ca.length - 1; i >= 0; i--)
+					if (!ca[i].indexOf(name))
+				return ca[i].replace(name, '');
+		}
+	</script>	
 </body>
 </html>
