@@ -66,12 +66,16 @@ function check_login()
 function create_entry()
 {
     //Diese Version speichert neuen Inhalt am Anfang der Datei
-    $nachricht      = filter_input(INPUT_POST, "message");
-	$name			= $_SESSION['username'];
-	if (!isset($name))
-	{
-		$name = "Anonymous";
-	}
+    $nachricht  = filter_input(INPUT_POST, "message");
+    $name	= $_SESSION['username'];
+
+    $uhrzeit 	= date('h:i:s', time());
+
+
+    if (!isset($name))
+    {
+        $name = "Anonymous";
+    }
 
 //    $datei      = fopen("variablen/counter", "r") or exit("<br><p>Fehler beim oeffnen der Datei! #1</p><br>");
 //    $counter    = fgets($datei);
@@ -81,18 +85,20 @@ function create_entry()
 //    fwrite($datei, $counter);
 //    fclose($datei);
 
-	if (isset($nachricht))
-	{
-		$dateiname      = "chat_content.php";
+    if (isset($nachricht))
+    {
+        $dateiname      = "chat_content.php";
 
-		$full_string    = "";
-		$full_string    = "<tr><td id='chat_entry'><strong>".$name.":&nbsp;</strong></td><td class='inhalt'>".$nachricht."</td></tr>\n";
-//		$full_string    .= file_get_contents($dateiname);
-		
-		file_put_contents ($dateiname, $full_string,FILE_APPEND);
-	}
-	else
-	{
-		echo "POST Variable 'message' nicht gesetzt!";
-	}
+        $full_string    = "<tr>";
+        $full_string    .= "</td><td>&nbsp;".$uhrzeit."&nbsp;</td>";
+        $full_string    .= "<td id='chat_entry'><strong>".$name."&nbsp;:</strong>";
+        $full_string    .= "<td class='inhalt'>".$nachricht."</td>";
+        $full_string    .= "</tr>\n";
+
+        file_put_contents ($dateiname, $full_string, FILE_APPEND);
+    }
+    else
+    {
+        echo "POST Variable 'message' nicht gesetzt!";
+    }
 }

@@ -9,6 +9,14 @@ div.logout {
     cursor: pointer;
 }
 
+input[type=text] {
+    width: 350px;
+}
+
+input[type=submit] {
+    width: 142px;
+}
+
 #chat_entry
 {
     padding-right:20px;
