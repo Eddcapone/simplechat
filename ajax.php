@@ -87,8 +87,12 @@ function create_entry()
 
 		$full_string    = "";
 		$full_string    = "<tr><td id='chat_entry'><strong>".$name.":&nbsp;</strong></td><td class='inhalt'>".$nachricht."</td></tr>\n";
+
+		//Diese Version speichert neuen Inhalt am Anfang der Datei
 //		$full_string    .= file_get_contents($dateiname);
-		
+//		file_put_contents ($dateiname, $full_string);		
+
+		//Diese Version speichert neuen Inhalt am ENDE der Datei
 		file_put_contents ($dateiname, $full_string,FILE_APPEND);
 	}
 	else

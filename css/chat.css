@@ -1,8 +1,17 @@
+div.smpchtnightmode {
+    position: absolute;
+    right: 4.3em;
+	top:4px;
+    padding:8px;
+    margin-right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
 div.logout {
     position: absolute;
-    border: 1px solid black;
-    background-color:#eee6e6;
-    right: 0px;
+    right: 2px;
+	top:4px;
     padding:8px;
     margin-right: 10px;
     z-index: 2;

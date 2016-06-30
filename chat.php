@@ -18,6 +18,7 @@
     <div class="col-lg-6 col-lg-offset-3" id="main">
 
         <div class="logout" id="logout">Logout</div>
+        <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
         <iframe src="chat_main.php#footer" id="mydiv_inhalt">
             <?php include "chat_main.php"; ?>
         </iframe>
@@ -35,21 +36,6 @@
 		}else{
 			var x = document.getElementById("mystyle");
 			x.href="css/loginDay.css";
-		}
-	</script>
-	<button type="button" id="smpchtnightmode" onclick = "neuerstyle()">Toggle Nightmode</button>
-	
-	<script>
-		function neuerstyle() {
-		 if(localStorage.getItem("smpchtnightmode")==1){
-				localStorage.setItem("smpchtnightmode", "0");				
-				var x = document.getElementById("mystyle");
-				x.href="css/loginDay.css";
-			}else{
-				localStorage.setItem("smpchtnightmode", "1");
-				var x = document.getElementById("mystyle");
-				x.href="css/loginNightly.css";
-			}
 		}
 	</script>
 </body>
