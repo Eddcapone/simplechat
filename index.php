@@ -6,15 +6,20 @@
 
 <html lang="en">
 <head>
+    <title>Login Page</title>
+    
     <meta charset="utf-8">
     <META HTTP-EQUIV="CACHE-CONTROL" 	CONTENT="NO-CACHE">
     <META HTTP-EQUIV="PRAGMA" 		CONTENT="NO-CACHE">
 
-    <title>Login Page</title>
-
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
+
     <script src="scripts/jquery.js"></script>
-	<link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
+    <script src="scripts/funktionen.js"></script>)
+    <script src="scripts/login.js"></script>
+    <script src="scripts/nightmode.js"></script>
+
 	
 </head>
 <body id="dashboard">
@@ -46,95 +51,5 @@
             </div>
         </div>
     </div>
-	<script>
-			function ale () { 
-					alert("HI");
-				}
-			//document.getElementById("nightmode").onclick = ale;
-	</script>
-    <script src="scripts/jquery.js"></script>
-	
-    <script type='text/javascript'>
-        var main = function()
-        {
-            
-            $("button[name=login]").click
-            (
-                function()
-                {
-                    var name       = $("input[name=username]").val();
-                    var passwort   = $("input[name=password]").val();
-
-                    console.log("NAME = ", name);
-                    console.log("PW = ", passwort);
-
-                    if (name != "" && passwort != "")
-                    {
-                        $.ajax
-                        (
-                            {
-                                url:    "ajax.php",
-                                type:   "POST",
-                                data:
-                                {
-                                    cmd:        "check_login",
-                                    passwort:   passwort,
-                                    name:       name
-                                },
-                                success: function (response)
-                                {
-                                    if (response === "Anmeldung erfolgreich!")
-                                    {
-                                        console.log("Anmeldung erfolgreich");
-                                        $("div#login_error").css("display","none");
-                                        window.location.replace("chat.php");
-                                    }
-                                    else
-                                    {
-                                        console.log("Anmeldung fehlgeschlagen");
-                                        $("div#login_error").css("display","block");
-                                    }
-                                }
-                            }
-                        );
-                    }
-                }
-            );
-            
-            $('.close').click
-            (
-                function()
-                {
-                    $('#login_error').css('display', 'none');
-                }
-            );	
-        };
-        $(document).ready(main);	
-    </script>
-	<script>
-		if(localStorage.getItem("smpchtnightmode")==1){
-		 
-			var x = document.getElementById("mystyle");
-			x.href="css/loginNightly.css";
-		}else{
-			var x = document.getElementById("mystyle");
-			x.href="css/loginDay.css";
-		}
-	</script>
-	<button type="button" id="smpchtnightmode" onclick = "neuerstyle()">Toggle Nightmode</button>
-	
-	<script>
-		function neuerstyle() {
-		 if(localStorage.getItem("smpchtnightmode")==1){
-				localStorage.setItem("smpchtnightmode", "0");				
-				var x = document.getElementById("mystyle");
-				x.href="css/loginDay.css";
-			}else{
-				localStorage.setItem("smpchtnightmode", "1");
-				var x = document.getElementById("mystyle");
-				x.href="css/loginNightly.css";
-			}
-		}
-	</script>
 </body>
 </html>

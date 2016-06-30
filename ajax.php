@@ -11,7 +11,8 @@ $zugangsdaten = array
 (
     "d"     =>  "d",
     "Eddy"  =>  "a",
-    "Joel"  =>  "Joel123"
+    "Joel"  =>  "Joel123",
+    "Alex"  =>  "1337"
 );
 
 switch($cmd)
@@ -55,10 +56,6 @@ function check_login()
                 $_SESSION['eingeloggt'] = '0';
                 return "Anmeldung fehlgeschlagen, Passwort inkorrekt!";
             }
-        }
-        else
-        {
-            //$err_string.= "Der Benutzer $post_username ist nicht in der Datenbank vorhanden!";
         }
     }
 }
