@@ -13,10 +13,12 @@
         <script src="scripts/chat.js"></script>
         <script src="scripts/nightmode.js"></script>
         <script src="scripts/clock.js"></script>
+        
     </head>
 <body>
 
     <div id="clockbox"></div>
+    
 
 <!-- <?php include 'language.php';?> -->
 
@@ -25,16 +27,12 @@
         <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
         <div class="logout" id="logout">Logout</div>
 
-        <iframe src="chat_main.php#footer" width="1500px" id="frame"></iframe>
+        <iframe src="chat_main.php#footer" width="1500px" height="800px" frameBorder="0" id="frame"></iframe>
 
         <div>
             <input type="text" name="nachricht">
             <input type="submit" name="send">
-        </div>
-
-                
-  
-        
+        </div>        
     </div> 
 </body>
 </html>

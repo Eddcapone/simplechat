@@ -12,7 +12,9 @@ $zugangsdaten = array
     "d"     =>  "d",
     "Eddy"  =>  "a",
     "Joel"  =>  "Joel123",
-    "Alex"  =>  "1337"
+    "Alex"  =>  "1337",
+    "Moritz" => "mo",
+    "Christoph" => "chris"
 );
 
 switch($cmd)

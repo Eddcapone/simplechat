@@ -24,7 +24,7 @@
 </head>
 <body id="dashboard">
 
-    <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
+    <div class="smpchtnightmode" id="smpchtnightmode" onclick="">Nightmode</div>
     <div class="col-lg-4 col-lg-offset-4" id="main">
         <div id="überschrift">
             <h1> Login </h1>

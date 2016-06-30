@@ -4,6 +4,7 @@
 <html>
 <head>
     <meta http-equiv="refresh" content="2">
+    <meta charset="UTF-8">
     <link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
     <script src="scripts/nightmode.js"></script>
 
