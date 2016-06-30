@@ -16,7 +16,7 @@
     <script src="scripts/jquery.js"></script>
     <script src="scripts/funktionen.js"></script>
 	<link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
-    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/nightmodebutton.css">
 	
 </head>
 <body id="dashboard">

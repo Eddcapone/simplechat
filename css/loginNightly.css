@@ -6,9 +6,15 @@
 			--test: #00ff00; 		/*var(--test)*/
 			--text: #666666; 		/*var(--text)*/
 			}
-			
+					
+		body {
+			font-family: Arial, Calibri, Corbel;
+			font-size: 100%;
+			background-color:var(--mainco); 
+		}
+		
 		div#logout,#smpchtnightmode{
-			font-family: Calibri;
+			
 			color: var(--text);
 			background-color:var(--mainco); 	
 			border: solid 1px var(--accentco);
@@ -17,21 +23,30 @@
 //			height:16%;
 			
 		}
-		
-		h1, h2, h3, h4, h5, h6 
-		{
+
+		h1, h2, h3 {
+			
+			font-size: 175%;
 			margin: 10px 0px;
-			font-family: inherit;
 			font-weight: bold;
 			line-height: 1;
 			color: var(--text);
 			text-rendering: optimizelegibility;
 		}
+		
+		h4, h5, h6 {
+			
+			font-size: 150%;
+			margin: 10px 0px;
+			font-weight: bold;
+			line-height: 1;
+			color: var(--text);
+			text-rendering: optimizelegibility;
+		}
+		
 		input {
-
-			font-family: Calibri;
-			font-size: 100%;
-			background-color : var(--mainco); 
+			
+			background-color : var(--mainco); 	
 			color: var(--text);
 			/*box-shadow:inset 0 0 10px var(--mainco);*/
 			padding: 1px;
@@ -40,8 +55,8 @@
 
 		}
 			
-		input#loginstyle{
-
+		input#loginstyle{		
+		
 			background-color : var(--mainco); 
 			color: var(--text);
 			/*box-shadow:inset 0 0 10px var(--mainco);*/
@@ -50,35 +65,9 @@
 			/*box-shadow: inset 1px 1px 2px 0 var(--secndco);*/
 
 		}
-		
-		table{
-			
-			font-family: Calibri;
-			font-size: 100%;
-			color: var(--text);
-			
-		}	
 				
-		form{
-			
-			font-family: Calibri;
-			font-size: 100%;
-			color: var(--text);
-			
-		}	
-				
-		iframe{
-			
-			font-family: Calibri;
-			font-size: 100%;
-			color: var(--text);
-			border: solid 1px var(--accentco);
-			box-shadow: inset 1px 1px 2px 0 var(--secndco);	
-			
-		}
 		button#smpchtnightmode{
-			font-family: Calibri;
-			font-size: 100%;
+			
 			position:absolute;
 			right:5px;
 			top:5px;
@@ -87,19 +76,31 @@
 			border: solid 1px var(--secndco);
 			box-shadow: inset 1px 1px 2px 0 var(--secndco);	
 		}
-		
-		body {
-			font-family: Calibri;
-			font-size: 100%;
-			background-color:var(--mainco); 
-	
-	}
+			
+		table{
+
+			color: var(--text);
+			
+		}	
+				
+		form{
+
+			color: var(--text);
+			
+		}	
+				
+		iframe{
+
+			color: var(--text);
+			border: solid 1px var(--accentco);
+			box-shadow: inset 1px 1px 2px 0 var(--secndco);	
+			
+		}
 		
 		.btn {
 			display: inline-block;
 			padding: 4px 14px;
 			margin-bottom: 2px;
-			font-size: 15px;
 			line-height: 14px;
 			color: var(--text);
 			text-align: center;
@@ -107,7 +108,7 @@
 
 			cursor: pointer;
 			background-color: var(--mainco);
-			background-image: -moz-linear-gradient(center top , var(--secndco), var(--mainco));
+			background-image: -moz-linear-gradient(center top , var(--mainco), var(--secndco));
 			background-repeat: repeat-x;
 			border-width: 1px;
 			border-style: solid;
