@@ -50,9 +50,9 @@
 
     <div class="col-lg-6 col-lg-offset-3" id="main">
 
+        <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
         <div class="logout" id="logout">Logout</div>
         <iframe src="chat_main.php" width="500px">
-        <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
             <?php include "chat_main.php"; ?>
         </iframe>
 
