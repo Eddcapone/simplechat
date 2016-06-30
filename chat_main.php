@@ -20,5 +20,8 @@
 			x.href="css/loginDay.css";
 		}
 	</script>
+	
+	<div id="footer"></div> 
+	
 </body>
 </html>

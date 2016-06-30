@@ -1,0 +1,13 @@
+<tr></td><td>&nbsp;01:30:50&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>asdfasdf</td></tr>
+<tr></td><td>&nbsp;01:30:50&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>asdf</td></tr>
+<tr></td><td>&nbsp;01:30:51&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>asdf</td></tr>
+<tr></td><td>&nbsp;01:30:51&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>asd</td></tr>
+<tr></td><td>&nbsp;01:30:51&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>fasd</td></tr>
+<tr></td><td>&nbsp;01:30:52&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>fa</td></tr>
+<tr></td><td>&nbsp;01:30:52&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>sdfa</td></tr>
+<tr></td><td>&nbsp;01:30:52&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>sdf</td></tr>
+<tr></td><td>&nbsp;01:30:52&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>asdf</td></tr>
+<tr></td><td>&nbsp;01:30:53&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>asdf</td></tr>
+<tr></td><td>&nbsp;01:30:54&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>as1234</td></tr>
+<tr></td><td>&nbsp;01:30:56&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>1234</td></tr>
+<tr></td><td>&nbsp;01:31:10&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>346</td></tr>

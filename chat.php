@@ -52,7 +52,7 @@
 
         <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
         <div class="logout" id="logout">Logout</div>
-        <iframe src="chat_main.php" width="500px">
+        <iframe src="chat_main.php#footer" width="500px">
             <?php include "chat_main.php"; ?>
         </iframe>
 
