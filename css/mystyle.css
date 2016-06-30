@@ -8,43 +8,38 @@ td.inhalt {
 }
 		
 a {
-color: green;
+    color: green;
 }
 
 a:visited {
-color: red;
+    color: red;
 }
 		
 table {
-	margin-left:auto;margin-right:auto;
-	vertical-align: middle;
-	
-	border: 5px dashed black;
-	background-color:#ffffff;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align: middle;
+
+    border: 5px dashed black;
+    background-color:#ffffff;
 }
 		
 td {
-
-	border: 2px solid black;
-	padding: 0.75em;
+    border: 2px solid black;
+    padding: 0.75em;
 }
 
 caption {
-	font-size: 0.875em;	
-	font-weight: bold;
+    font-size: 0.875em;	
+    font-weight: bold;
 }
 
 img{
-	width: 372;
-	height: 210; 
-
-
+    width: 372;
+    height: 210; 
 }
-
 		
 article.nav {
-
-	background-color:#000000;
-	color: white;
-	
+    background-color:#000000;
+    color: white;
 }
