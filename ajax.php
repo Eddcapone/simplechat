@@ -68,6 +68,10 @@ function create_entry()
     //Diese Version speichert neuen Inhalt am Anfang der Datei
     $nachricht      = filter_input(INPUT_POST, "message");
 	$name			= $_SESSION['username'];
+	
+	$uhrzeit 		= date('h:i:s', time());
+
+	
 	if (!isset($name))
 	{
 		$name = "Anonymous";
@@ -85,9 +89,11 @@ function create_entry()
 	{
 		$dateiname      = "chat_content.php";
 
-		$full_string    = "";
-		$full_string    = "<tr><td id='chat_entry'><strong>".$name.":&nbsp;</strong></td><td class='inhalt'>".$nachricht."</td></tr>\n";
-//		$full_string    .= file_get_contents($dateiname);
+		$full_string    = "<tr>";
+                $full_string    .= "</td><td>&nbsp;".$uhrzeit."&nbsp;</td>";
+                $full_string    .= "<td id='chat_entry'><strong>".$name."&nbsp;:</strong>";
+                $full_string    .= "<td class='inhalt'>".$nachricht."</td>";
+                $full_string    .= "</tr>\n";
 		
 		file_put_contents ($dateiname, $full_string,FILE_APPEND);
 	}
