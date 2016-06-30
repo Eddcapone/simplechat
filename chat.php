@@ -10,7 +10,41 @@
         <link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
         <link rel="stylesheet" href="css/chat.css">
     </head>
+    
+    <script>
+        if(localStorage.getItem("smpchtnightmode")==1)
+        {
+                document.getElementById("mystyle").href = "css/loginNightly.css";
+        }else{
+                document.getElementById("mystyle").href = "css/loginDay.css";;
+        }
+    </script>
 <body>
+    
+    <script type="text/javascript">
+        var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+        function GetClock()
+        {
+            var d=new Date();
+            var nmonth=d.getMonth(), ndate=d.getDate(), nyear=d.getYear();
+            if(nyear<1000) nyear+=1900;
+
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+            if(nmin<=9) nmin="0"+nmin
+            if(nsec<=9) nsec="0"+nsec;
+
+            document.getElementById('clockbox').innerHTML=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+        }
+
+        window.onload=function()
+        {
+            GetClock();
+            setInterval(GetClock,1000);
+        }
+    </script>
+    <div id="clockbox"></div>
+
 
 <!-- <?php include 'language.php';?> -->
 
@@ -26,31 +60,8 @@
             <input type="text" name="nachricht">
             <input type="submit" name="send">
         </div>
-    </div> 
-	<script>
-            if(localStorage.getItem("smpchtnightmode")==1){
+    </div>
 
-                    var x = document.getElementById("mystyle");
-                    x.href="css/loginNightly.css";
-            }else{
-                    var x = document.getElementById("mystyle");
-                    x.href="css/loginDay.css";
-            }
-	</script>
-	<button type="button" id="smpchtnightmode" onclick = "neuerstyle()">Toggle Nightmode</button>
-	
-	<script>
-		function neuerstyle() {
-                    if(localStorage.getItem("smpchtnightmode")==1){
-                            localStorage.setItem("smpchtnightmode", "0");				
-                            var x = document.getElementById("mystyle");
-                            x.href="css/loginDay.css";
-                    }else{
-                            localStorage.setItem("smpchtnightmode", "1");
-                            var x = document.getElementById("mystyle");
-                            x.href="css/loginNightly.css";
-                    }
-		}
-	</script>
+    <button type="button" id="smpchtnightmode" onclick = "neuerstyle()">Toggle Nightmode</button>
 </body>
 </html>
