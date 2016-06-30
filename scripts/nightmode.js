@@ -12,8 +12,8 @@ $(document).ready
         $("div.smpchtnightmode").on 
         ( 
           "click", 
-          function() 
-          { 
+          function()
+          {
             if(localStorage.getItem("smpchtnightmode")==1)
             { 
               localStorage.setItem("smpchtnightmode", "0");         

@@ -25,15 +25,16 @@
         <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
         <div class="logout" id="logout">Logout</div>
 
-        <iframe src="chat_main.php#footer" width="1500px">
-
-            <?php include "chat_main.php"; ?>
-        </iframe>
+        <iframe src="chat_main.php#footer" width="1500px" id="frame"></iframe>
 
         <div>
             <input type="text" name="nachricht">
             <input type="submit" name="send">
         </div>
+
+                
+  
+        
     </div> 
 </body>
 </html>
