@@ -64,6 +64,7 @@ function create_entry()
 {
     //Diese Version speichert neuen Inhalt am Anfang der Datei
     $nachricht  = filter_input(INPUT_POST, "message");
+    $nachricht  = strip_tags($nachricht);
     $name	= $_SESSION['username'];
 
     $uhrzeit 	= date('h:i:s', time());

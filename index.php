@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/nightmodebutton.css">
     
     <script src="scripts/jquery.js"></script>
-    <script src="scripts/funktionen.js"></script>)
+    <script src="scripts/funktionen.js"></script>
     <script src="scripts/login.js"></script>
     <script src="scripts/nightmode.js"></script>
 	
@@ -32,7 +32,7 @@
         <div id="login_box">
             <div id="login_box_p1">
                 <h4> Login </h4>
-            </div>	
+            </div>
 
             <div id="login_box_p2">
                 <div id="login">
