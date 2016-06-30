@@ -10,7 +10,24 @@ function main()
             location.replace("logout.php");
         }
     );
-        
+            
+	$("div.smpchtnightmode").on
+    (
+        "click",
+        function()
+        {
+			if(localStorage.getItem("smpchtnightmode")==1){
+				localStorage.setItem("smpchtnightmode", "0");				
+				var x = document.getElementById("mystyle");
+				x.href="css/loginDay.css";
+			}else{
+				localStorage.setItem("smpchtnightmode", "1");
+				var x = document.getElementById("mystyle");
+				x.href="css/loginNightly.css";
+			}
+        }
+    );
+	
     $("input[name=send]").on
     (
         "click",

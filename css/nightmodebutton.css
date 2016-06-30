@@ -1,0 +1,10 @@
+div.smpchtnightmode {
+	font-size: 90%;
+    position: absolute;
+    right: 4px;
+	top:4px;
+    padding:8px;
+    margin-right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
