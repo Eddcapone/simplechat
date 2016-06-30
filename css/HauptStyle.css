@@ -1,0 +1,249 @@
+/*Grundlegende CSS Anpassungen für alle Seiten*/
+body 
+{
+	font-family: Arial, Calibri, Corbel;
+	font-size: 100%;
+	background-color:var(--mainco); 
+}
+
+div#logout:hover 
+{
+	background-color:var(--text);
+	color: var(--mainco);
+}
+
+div#smpchtnightmode:hover 
+{
+	background-color:var(--text);
+	color: var(--mainco);
+}
+div#logout,#smpchtnightmode
+{
+	color: var(--text);
+	border: solid 1px var(--accentco);
+	box-shadow: inset 1px 1px 2px 0 var(--secndco);	
+	line-height:50%;
+}
+
+a#Impressum
+{
+	position: absolute;
+	bottom:3px;
+	left:4px;
+}
+h1, h2, h3 
+{
+	font-size: 175%;
+	margin: 10px 0px;
+	font-weight: bold;
+	line-height: 1;
+	color: var(--text);
+	text-rendering: optimizelegibility;
+}
+
+h4, h5, h6 
+{
+	font-size: 150%;
+	margin: 10px 0px;
+	font-weight: bold;
+	line-height: 1;
+	color: var(--text);
+	text-rendering: optimizelegibility;
+}
+
+input 
+{
+	color: var(--text);
+	padding: 1px;
+	border: solid 1px var(--accentco);
+}
+	
+input#loginstyle
+{
+	color: var(--text);
+	padding: 1px;
+	border: solid 1px var(--secndco);
+}
+
+button#smpchtnightmode
+{
+	position:absolute;
+	right:5px;
+	top:5px;
+	color: var(--text);
+	border: solid 1px var(--secndco);
+	box-shadow: inset 1px 1px 2px 0 var(--secndco);	
+}
+	
+table
+{
+	color: var(--text);	
+}	
+
+form{
+
+	color: var(--text);
+	
+}	
+
+iframe
+{
+	color: var(--text);
+	border: solid 1px var(--accentco);
+	box-shadow: inset 1px 1px 2px 0 var(--secndco);	
+}
+
+.btn 
+{
+	display: inline-block;
+	padding: 4px 14px;
+	margin-bottom: 2px;
+	line-height: 14px;
+	color: var(--text);
+	text-align: center;
+	text-shadow: 0px 1px 1px var(--secndco);
+    background-color : var(--mainco); 
+    color: var(--text);
+    padding: 1px;
+    border: solid 1px var(--secndco);
+}
+
+button#smpchtnightmode
+{
+        position:absolute;
+        right:5px;
+        top:5px;
+        color: var(--text);
+        border: solid 1px var(--secndco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);	
+}
+
+table
+{
+        color: var(--text);
+}	
+
+form{
+
+        color: var(--text);
+
+}	
+
+iframe
+{
+        color: var(--text);
+        border: solid 1px var(--accentco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);	
+}
+
+body 
+{
+        background-color:var(--mainco); 
+}
+
+.btn 
+{
+        display: inline-block;
+        padding: 4px 14px;
+        margin-bottom: 2px;
+        font-size: 15px;
+        line-height: 14px;
+        color: var(--text);
+        text-align: center;
+        text-shadow: 0px 1px 1px var(--secndco);
+        cursor: pointer;
+        background-image: -moz-linear-gradient(center top , var(--mainco), var(--secndco));
+        background-repeat: repeat-x;
+        border-width: 1px;
+        border-style: solid;
+        -moz-border-top-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        border: solid 1px var(--secndco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);
+}
+
+.input-small { width: 90px;}
+
+#main
+{
+        margin-top: 64px;
+}
+
+#�berschrift
+{
+        padding-bottom:18x;
+        border: solid 1px var(--secndco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);
+}
+
+#login_box
+{
+        margin-top: 27px;
+        border: solid 1px var(--accentco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);
+}
+
+#login_box_p1
+{
+        size: 10px;
+        border-bottom: 1px solid var(--accentco);
+        padding-left: 5px;
+
+        background-image: -moz-linear-gradient(center top , var(--mainco), var(--secndco));
+}
+
+#login_box_p2
+{
+        padding: 9px;
+}
+
+#login
+{
+        padding: 20px;
+        border: solid 1px var(--accentco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);
+}
+
+.input_text
+{
+        width: 97px;
+}
+
+#login_error
+{
+        display: none;
+}
+
+/* --------- Alert--------------------------------------- */
+
+.alert-block 
+{
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border: solid 1px var(--accentco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);
+}
+.alert-danger, .alert-error 
+{
+        color: var(--mainco);
+        border: solid 1px var(--accentco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);
+}
+.alert 
+{
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 20px;
+        color: var(--text);
+        text-shadow: 0px 1px 0px var(--secndco);
+        border: solid 1px var(--accentco);
+        box-shadow: inset 1px 1px 2px 0 var(--secndco);
+}
+
+div#clockbox 
+{
+    color:black;
+}
+
+/* ---END - - - Alert --------------------------------------- */

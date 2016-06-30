@@ -7,20 +7,26 @@
     <head>
         <script src="scripts/jquery.js"></script>
         <script src="scripts/funktionen.js"></script>
-        <link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
+	<link rel="stylesheet" href="css/HauptStyle.css" media="screen">
+	<link rel="stylesheet" id="mystyle" href="css/DayStyle.css" media="screen">
         <link rel="stylesheet" href="css/chat.css">
     </head>
-    
-    <script>
-        if(localStorage.getItem("smpchtnightmode")==1)
-        {
-                document.getElementById("mystyle").href = "css/loginNightly.css";
-        }else{
-                document.getElementById("mystyle").href = "css/loginDay.css";;
-        }
-    </script>
+
+	<script>
+		if(localStorage.getItem("smpchtnightmode")==1){
+		 
+			var x = document.getElementById("mystyle");
+			x.href="css/NightStyle.css";
+		}else{
+			var x = document.getElementById("mystyle");
+			x.href="css/DayStyle.css";
+		}
+	</script>
+	
 <body>
     
+    <a id="Impressum"Href="Impressum.html">Impressum</a>
+		
     <script type="text/javascript">
         var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 

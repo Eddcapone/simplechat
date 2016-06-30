@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <script src="scripts/jquery.js"></script>
     <script src="scripts/funktionen.js"></script>
-	<link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
+	<link rel="stylesheet" href="css/HauptStyle.css" media="screen">
+	<link rel="stylesheet" id="mystyle" href="css/DayStyle.css" media="screen">
     <link rel="stylesheet" href="css/nightmodebutton.css">
 	
 </head>
 <body id="dashboard">
 
     <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
+    <a id="Impressum"Href="Impressum.html">Impressum</a>
     <div class="col-lg-4 col-lg-offset-4" id="main">
         <div id="überschrift">
             <h1> Login </h1>
@@ -118,10 +120,10 @@
 		if(localStorage.getItem("smpchtnightmode")==1){
 		 
 			var x = document.getElementById("mystyle");
-			x.href="css/loginNightly.css";
+			x.href="css/NightStyle.css";
 		}else{
 			var x = document.getElementById("mystyle");
-			x.href="css/loginDay.css";
+			x.href="css/DayStyle.css";
 		}
 	</script>
 

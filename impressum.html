@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<title> About </title>
+    <script src="scripts/funktionen.js"></script>
+	<link rel="stylesheet" href="css/HauptStyle.css" media="screen">
+	<link rel="stylesheet" id="mystyle" href="css/DayStyle.css" media="screen">
+    <link rel="stylesheet" href="css/nightmodebutton.css">
+</head>
+
+<body>
+    <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
+	
+	<div> Erstellt von: Eduard Fekete und Joel Henning</div>
+	
+	<script>
+		if(localStorage.getItem("smpchtnightmode")==1){
+		 
+			var x = document.getElementById("mystyle");
+			x.href="css/NightStyle.css";
+		}else{
+			var x = document.getElementById("mystyle");
+			x.href="css/DayStyle.css";
+		}
+	</script>
+</body>
+</html>

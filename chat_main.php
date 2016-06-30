@@ -4,7 +4,8 @@
 <html>
 <head>
     <meta http-equiv="refresh" content="2">
-    <link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
+	<link rel="stylesheet" href="css/HauptStyle.css" media="screen">
+	<link rel="stylesheet" id="mystyle" href="css/DayStyle.css" media="screen">
 </head>
 <body>
     <table>
@@ -14,10 +15,10 @@
 		if(localStorage.getItem("smpchtnightmode")==1){
 		 
 			var x = document.getElementById("mystyle");
-			x.href="css/loginNightly.css";
+			x.href="css/NightStyle.css";
 		}else{
 			var x = document.getElementById("mystyle");
-			x.href="css/loginDay.css";
+			x.href="css/DayStyle.css";
 		}
 	</script>
 	

@@ -1,0 +1,8 @@
+/* Die Variablen für den Tages Stil*/
+:root {
+	--mainco: #FFFFFF; 		/*var(--mainco)*/
+	--secndco: #EEEEEE;		/*var(--secndco)*/
+	--accentco: #FF0000; 	/*var(--accentco)*/
+	--test: #00ff00; 		/*var(--test)*/
+	--text: #666666; 		/*var(--text)*/
+	}
