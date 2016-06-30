@@ -14,16 +14,17 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
-
+    <link rel="stylesheet" href="css/nightmodebutton.css">
+    
     <script src="scripts/jquery.js"></script>
     <script src="scripts/funktionen.js"></script>)
     <script src="scripts/login.js"></script>
     <script src="scripts/nightmode.js"></script>
-
 	
 </head>
 <body id="dashboard">
 
+    <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
     <div class="col-lg-4 col-lg-offset-4" id="main">
         <div id="überschrift">
             <h1> Login </h1>

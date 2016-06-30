@@ -11,5 +11,7 @@
     <table>
         <?php include 'chat_content.php' ?>
     </table>
+
+    <div id="footer"></div> 
 </body>
 </html>

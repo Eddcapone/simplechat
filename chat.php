@@ -22,9 +22,11 @@
 
     <div class="col-lg-6 col-lg-offset-3" id="main">
 
+        <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
         <div class="logout" id="logout">Logout</div>
-        
-        <iframe src="chat_main.php" width="1500px">
+
+        <iframe src="chat_main.php#footer" width="1500px">
+
             <?php include "chat_main.php"; ?>
         </iframe>
 
@@ -32,8 +34,6 @@
             <input type="text" name="nachricht">
             <input type="submit" name="send">
         </div>
-    </div>
-
-    <button type="button" id="smpchtnightmode" onclick = "neuerstyle()">Toggle Nightmode</button>
+    </div> 
 </body>
 </html>
