@@ -1,3 +1,8 @@
+img.emoticon {
+    width: 18px;
+    height: 24px;
+}
+
 div.smpchtnightmode {
 	font-size: 90%;
     position: absolute;

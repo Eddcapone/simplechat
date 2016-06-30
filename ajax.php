@@ -87,6 +87,7 @@ function create_entry()
 
     if (isset($nachricht))
     {
+        $nachricht       = convert_to_smiley($nachricht);
         $dateiname      = "chat_content.php";
 
         $full_string    = "<tr>";
@@ -101,4 +102,21 @@ function create_entry()
     {
         echo "POST Variable 'message' nicht gesetzt!";
     }
+}
+
+function convert_to_smiley($nachricht)
+{
+    
+    $neue_nachricht = preg_replace("/ Kappa/"," <img class='emoticon' src='img/kappa.png'>", $nachricht);
+    
+    if ($nachricht != $neue_nachricht)
+    {
+        return $neue_nachricht;
+    }
+    else
+    {
+        return $nachricht;
+    }
+    
+    
 }
