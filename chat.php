@@ -16,7 +16,7 @@
         
     </head>
 <body>
-
+    
     <div id="clockbox"></div>
     
 
@@ -27,7 +27,7 @@
         <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
         <div class="logout" id="logout">Logout</div>
 
-        <iframe src="chat_main.php#footer" width="1500px" height="800px" frameBorder="0" id="frame"></iframe>
+        <iframe src="chat_main.php" width="1500px" height="800px" id="frame"></iframe>
 
         <div>
             <input type="text" name="nachricht">
