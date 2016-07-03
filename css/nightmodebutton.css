@@ -1,10 +1,20 @@
 div.smpchtnightmode {
-	font-size: 90%;
+    font-size: 90%;
     position: absolute;
     right: 4px;
-	top:4px;
+    top:4px;
     padding:8px;
     margin-right: 10px;
     z-index: 2;
-    cursor: pointer;
+    cursor: pointer;    
+    color: var(--text);
+    background-color:var(--mainco); 	
+    border: solid 1px var(--accentco);
+    box-shadow: inset 1px 1px 2px 0 var(--secndco);	
+    line-height:50%;
 }
+
+div#smpchtautoscroll:hover {
+ 	background-color:var(--text);
+ 	color: var(--mainco);
+ }

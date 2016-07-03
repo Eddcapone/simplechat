@@ -1,0 +1,7 @@
+:root {
+    --mainco: #222222;      /*var(--mainco)*/
+    --secndco: #333333;     /*var(--secndco)*/
+    --accentco: #cc0000;    /*var(--accentco)*/
+    --test: #00ff00;        /*var(--test)*/
+    --text: #aaaaaa;        /*var(--text)*/
+}

@@ -13,7 +13,8 @@
     <META HTTP-EQUIV="PRAGMA" 		CONTENT="NO-CACHE">
 
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" id="mystyle" href="css/loginDay.css" media="screen">
+    <link rel="stylesheet" id="mystyle" href="css/dayStyle.css" media="screen">
+    <link rel="stylesheet" id="mystyle" href="css/mainStyle.css" media="screen">
     <link rel="stylesheet" href="css/nightmodebutton.css">
     
     <script src="scripts/jquery.js"></script>

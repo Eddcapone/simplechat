@@ -31,9 +31,9 @@ function neuerstyle()
     if(localStorage.getItem("smpchtnightmode")==1)
     {
         localStorage.setItem("smpchtnightmode", "0");				
-        document.getElementById("mystyle").href="css/loginDay.css";
+        document.getElementById("mystyle").href="css/dayStyle.css";
     }else{
         localStorage.setItem("smpchtnightmode", "1");
-        document.getElementById("mystyle").href="css/loginNightly.css";
+        document.getElementById("mystyle").href="css/nightStyle.css";
     }
 }

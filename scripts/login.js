@@ -4,6 +4,7 @@ var main = function()
     (
         function()
         {
+            localStorage.setItem("smpchtautoscroll", "1"); 
             console.log("ISODFPJSID");
             var name       = $("input[name=username]").val();
             var passwort   = $("input[name=password]").val();
