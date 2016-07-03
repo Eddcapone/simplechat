@@ -1,5 +1,5 @@
 <?php
-
+    
 session_start();
 
 $cmd            = filter_input(INPUT_POST, "cmd");
@@ -77,16 +77,9 @@ function create_entry()
         $name = "Anonymous";
     }
 
-//    $datei      = fopen("variablen/counter", "r") or exit("<br><p>Fehler beim oeffnen der Datei! #1</p><br>");
-//    $counter    = fgets($datei);
-//    fclose($datei);
-//    $counter    = $counter + 1;
-//    $datei      = fopen("variablen/counter", "w") or exit("<br><p>Fehler beim oeffnen der Datei! #1</p><br>");
-//    fwrite($datei, $counter);
-//    fclose($datei);
-
     if (isset($nachricht))
     {
+
         $nachricht       = convert_to_smiley($nachricht);
         $dateiname      = "chat_content.php";
 
