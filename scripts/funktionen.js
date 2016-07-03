@@ -25,15 +25,3 @@ function send_message()
     $("input[name=nachricht]").val("");
     $("input[name=nachricht]").focus();
 }
-
-function neuerstyle()
-{
-    if(localStorage.getItem("smpchtnightmode")==1)
-    {
-        localStorage.setItem("smpchtnightmode", "0");				
-        document.getElementById("mystyle").href="css/dayStyle.css";
-    }else{
-        localStorage.setItem("smpchtnightmode", "1");
-        document.getElementById("mystyle").href="css/nightStyle.css";
-    }
-}

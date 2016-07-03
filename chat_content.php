@@ -66,3 +66,7 @@
 <tr></td><td>&nbsp;12:42:30&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>asdf</td></tr>
 <tr></td><td>&nbsp;01:09:48&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>Hallo</td></tr>
 <tr></td><td>&nbsp;01:16:55&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>asdf</td></tr>
+<tr></td><td>&nbsp;01:51:27&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>1</td></tr>
+<tr></td><td>&nbsp;01:51:27&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>2</td></tr>
+<tr></td><td>&nbsp;01:51:28&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>3</td></tr>
+<tr></td><td>&nbsp;01:51:28&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>4</td></tr>
