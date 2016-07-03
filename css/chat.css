@@ -5,7 +5,7 @@ img.emoticon {
 
 div#logout,#smpchtnightmode, #smpchtautoscroll {
     color: var(--text);
-    background-color:var(--mainco); 	
+    background-color: var(--mainco); 	
     border: solid 1px var(--accentco);
     box-shadow: inset 1px 1px 2px 0 var(--secndco);	
     line-height:50%;
@@ -13,18 +13,23 @@ div#logout,#smpchtnightmode, #smpchtautoscroll {
 }
 
 div#smpchtautoscroll:hover {
- 	background-color:var(--text);
- 	color: var(--mainco);
+    background-color:var(--text);
+    color: var(--mainco);
  }
   
 div#smpchtnightmode:hover {
- 	background-color:var(--text);
- 	color: var(--mainco);
+    background-color:var(--text);
+    color: var(--mainco);
  }
  
 div#logout:hover {
- 	background-color:var(--text);
- 	color: var(--mainco);
+    background-color:var(--text);
+    color: var(--mainco);
+ }
+ 
+div#smpchterrorbutton:hover {
+    background-color:var(--text);
+    color: var(--mainco);
  }
  
 div.smpchtnightmode {
@@ -57,6 +62,15 @@ div.logout {
     padding:8px;
     margin-right: 10px;
     z-index: 2;
+    cursor: pointer;
+}
+
+div.smpchterrorbutton {
+    font-size: 90%;
+    float: right;
+    position: relative;
+    right: 4px;
+    top:4px;
     cursor: pointer;
 }
 

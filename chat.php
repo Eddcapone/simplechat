@@ -15,6 +15,7 @@
         <script src="scripts/nightmode.js"></script>
         <script src="scripts/clock.js"></script>
         <script src="scripts/autocroll.js"></script>
+        <script src="scripts/errorbutton.js"></script>
     </head>
 <body>
     
@@ -27,6 +28,7 @@
 
         <div class="smpchtautoscroll" id="smpchtautoscroll">Autoscroll</div>
         <div class="smpchtnightmode" id="smpchtnightmode">Nightmode</div>
+        
         <div class="logout" id="logout">Logout</div>
 
         <iframe src="chat_main.php" width="1500px" height="800px" id="frame"></iframe>
@@ -36,5 +38,13 @@
             <input type="submit" name="send">
         </div>        
     </div> 
+
+    <div id="login_error" style="width: 1502px">
+        <div class="alert alert-block alert-error fade in">
+            <div class="smpchterrorbutton" id="smpchterrorbutton">x</div>
+            <h4 class="alert-heading">Leere Nachricht!</h4>
+        </div>
+    </div>
+
 </body>
 </html>

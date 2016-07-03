@@ -4,6 +4,8 @@ function send_message()
 
     if ($nachricht != "")       //Nachrichten nur abschicken wenn diese nicht leer sind.
     {
+        $("div#login_error").css("display","none");
+
         $.ajax
         (
             {
@@ -19,9 +21,10 @@ function send_message()
     }
     else
     {
-        //Wenn die Nachricht leer ist, sollte jetzt eine Messagebox angezeigt werden.
+        $("div#login_error").css("display","block");
     }
 
     $("input[name=nachricht]").val("");
     $("input[name=nachricht]").focus();
 }
+
