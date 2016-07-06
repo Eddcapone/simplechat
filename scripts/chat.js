@@ -1,3 +1,4 @@
+//Funktion für das div-Element, das als Button benutzt wird und den Logout auslöst und Senden auslöst.
 var main = function()
 {
     $("div.logout").on

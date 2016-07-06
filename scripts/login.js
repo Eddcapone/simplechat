@@ -1,3 +1,4 @@
+//Funktion für das einloggen.
 var main = function()
 {
     $("button[name=login]").click

@@ -1,3 +1,4 @@
+/*Grundlegendes CSS für alle Seiten.*/
 body {
     font-family: Arial, Calibri, Corbel;
     font-size: 100%;
@@ -37,49 +38,15 @@ input#loginstyle {
     border: solid 1px var(--secndco);
 }
 
-button#smpchtnightmode {
-    position:absolute;
-    right:5px;
-    top:5px;
-    color: var(--text);
-    background-color:var(--mainco); 	
-    border: solid 1px var(--secndco);
-    box-shadow: inset 1px 1px 2px 0 var(--secndco);	
-}
-
-table {
-    color: var(--text);
-}	
-
-form {
-    color: var(--text);
-}	
-
 iframe {
-    color: var(--text);
     border: solid 1px var(--accentco);
     box-shadow: inset 1px 1px 2px 0 var(--secndco);	
 }
 
-.btn {
-    display: inline-block;
-    padding: 4px 14px;
-    margin-bottom: 2px;
-    line-height: 14px;
-    color: var(--text);
-    text-align: center;
-    text-shadow: 0px 1px 1px var(--secndco);
-    background-color : var(--mainco); 
-    color: var(--text);
-    padding: 1px;
-    border: solid 1px var(--secndco);
-}
-
 button#smpchtnightmode {
     position:absolute;
     right:5px;
     top:5px;
-    color: var(--text);
     background-color:var(--mainco); 	
     border: solid 1px var(--secndco);
     box-shadow: inset 1px 1px 2px 0 var(--secndco);	
@@ -99,9 +66,7 @@ iframe {
     box-shadow: inset 1px 1px 2px 0 var(--secndco);
 }
 
-body {
-    background-color:var(--mainco); 
-}
+/* --------- Login--------------------------------------- */
 
 .btn {
     display: inline-block;
@@ -134,7 +99,7 @@ body {
     margin-top: 64px;
 }
 
-#�berschrift {
+#ueberschrift {
     padding-bottom:18x;
     border: solid 1px var(--secndco);
     box-shadow: inset 1px 1px 2px 0 var(--secndco);

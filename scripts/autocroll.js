@@ -1,3 +1,4 @@
+//Funktion für das div-Element, das als Button benutzt wird und Autoscroll umschaltet.
 $(document).ready
 (
     function()

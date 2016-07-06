@@ -1,7 +1,7 @@
+/*Die definition der Variablen für CSS im nightStyle.*/
 :root {
-    --mainco: #222222;      /*var(--mainco)*/
-    --secndco: #333333;     /*var(--secndco)*/
-    --accentco: #cc0000;    /*var(--accentco)*/
-    --test: #00ff00;        /*var(--test)*/
-    --text: #aaaaaa;        /*var(--text)*/
+    --mainco: #222222;      /*Hauptfarbe, für den Hintergrund*/
+    --secndco: #333333;     /*Zweitfarbe für den Hintergrund*/
+    --accentco: #cc0000;    /*Farbe für Akzente*/
+    --text: #aaaaaa;        /*Farbe für den Text*/
 }
