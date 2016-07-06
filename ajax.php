@@ -63,7 +63,6 @@ function check_login()                                                          
 
 function create_entry()                                                         //Funktion für das erstellen einer Nachricht.
 {
-    //Diese Version speichert neuen Inhalt am Anfang der Datei
     $nachricht  = filter_input(INPUT_POST, "message");
     $nachricht  = strip_tags($nachricht);
     $name	= $_SESSION['username'];

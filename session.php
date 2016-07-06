@@ -2,7 +2,10 @@
 <?php
 
 session_set_cookie_params(1);                                                   //Speichert 1 Stunde, dass ein Nutzer eingeloggt ist.
-session_start();
+if(!isset($_SESSION))                                                           //Startet die Session, wenn sie nicht schon gestartet wurde.
+{ 
+    session_start(); 
+} 
 
 
 if (isset($_SESSION['eingeloggt']) && $_SESSION['eingeloggt'] == '1')
