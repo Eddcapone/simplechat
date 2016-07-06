@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 <?php
-    session_start();
+    session_start();                                                            //Verhindert Zugriff ohne eingeloggt zu sein.
 ?>
 
 <html lang="en">
@@ -26,7 +26,7 @@
 </head>
 <body id="dashboard">
 
-    <div class="smpchtnightmode" id="smpchtnightmode" onclick="">Nightmode</div>
+    <div class="smpchtnightmode" id="smpchtnightmode" onclick="">Nightmode</div> <!--Nightmode-"Button"-->
     <div class="col-lg-4 col-lg-offset-4" id="main">
         <div id="ueberschrift">
             <h1> Login </h1>
@@ -36,7 +36,7 @@
                 <h4> Login </h4>
             </div>
 
-            <div id="login_box_p2">
+            <div id="login_box_p2">                                              <!--Loginbereich-->
                 <div id="login">
                     <input type="text" name="username" value="" placeholder="username" class="input_text"></input>
                     <input type="password" name="password" value="" placeholder="password" class="input_text"></input>
@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <div id="login_error">
+        <div id="login_error">                                                   <!--Fehlermeldung bei falschem Login-->
             <div class="alert alert-block alert-error fade in">
                 <button class="close" data-dismiss="alert" type="button">×</button>
                 <h4 class="alert-heading">Login Error</h4>

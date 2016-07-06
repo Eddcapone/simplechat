@@ -1,4 +1,4 @@
-<!--Skript, das sicherstellt, dass nur User die eingeloggt sind auf Seiten zugreifen können.-->
+<!--Skript, das den Nutzer ausloggt.-->
 <?php
 
 include "session.php";
