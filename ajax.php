@@ -99,9 +99,16 @@ function create_entry()
 
 function convert_to_smiley($nachricht)
 {
-    
-    $neue_nachricht = preg_replace("/ Kappa/"," <img class='emoticon' src='img/kappa.png'>", $nachricht);
-    
+    //schule ist heute mal wieder voll geil kappa, kunst ist das beste fach kappaross
+		
+	//Kappaross muss an erster Stelle stehen
+	$neue_nachricht = preg_replace("/ kappaross/"," <img style='width:24px'class='emoticon' src='img/kappaross.png'>", $nachricht);
+	$neue_nachricht = preg_replace("/ kappa/"," <img style='width:20px' class='emoticon' src='img/kappa.png'>", $neue_nachricht);
+   
+	
+	//schule ist heute mal wieder voll geil (KAPPA EMOT), kunst ist das beste fach kappaross
+	
+	
     if ($nachricht != $neue_nachricht)
     {
         return $neue_nachricht;
