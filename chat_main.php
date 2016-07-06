@@ -1,9 +1,8 @@
-<?php
-include "session.php";
-?>
+<!--Seite zum Steuern des Chatverlaufs-->
+<?php include "session.php"; ?>                                                 <!--Verhindert Zugriff ohne eingeloggt zu sein.-->
 <html>
     <head>
-        <META HTTP-EQUIV="Refresh" Content="2">
+        <META HTTP-EQUIV="Refresh" Content="2">                                 <!--Seitenrefresh-->
         <meta charset="UTF-8">
         <link rel="stylesheet" id="mystyle" href="css/dayStyle.css" media="screen">
         <link rel="stylesheet" id="mystyle" href="css/mainStyle.css" media="screen">
@@ -12,15 +11,13 @@ include "session.php";
 
     </head>
 
-    <div>
-        <table id="testiframe">
+    <div>                                                                       <!--Einbindung des Chat-Inhalts-->
+        <table>
             <?php include 'chat_content.php' ?>
         </table>
     </div>
 
-    <div id="footer"></div> 
-
-    <script>     
+    <script>                                                                    //Skript für das automatische Scrollen des Chat-Inhalts
         if (localStorage.getItem("smpchtautoscroll") == 1)
         {
             function scrollWin() {

@@ -1,7 +1,7 @@
+/*Die definition der Variablen für CSS im dayStyle.*/
 :root {
     --mainco: #FFFFFF;      /*var(--mainco)*/
     --secndco: #EEEEEE;     /*var(--secndco)*/
     --accentco: #FF0000;    /*var(--accentco)*/
-    --test: #00ff00;        /*var(--test)*/
     --text: #333333;        /*var(--text)*/
 }

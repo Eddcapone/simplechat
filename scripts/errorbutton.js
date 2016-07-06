@@ -1,3 +1,4 @@
+//Funktion für das div-Element, das als Button benutzt wird und die "Leere Nachricht!" Fehlermeldung schließt.
 $(document).ready
 (
     function()

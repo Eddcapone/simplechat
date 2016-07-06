@@ -1,3 +1,4 @@
+//Funktion für die Uhr.
 var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 
 function GetClock()

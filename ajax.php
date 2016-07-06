@@ -6,8 +6,7 @@ $cmd            = filter_input(INPUT_POST, "cmd");
 $post_username  = filter_input(INPUT_POST, "name");
 $post_passwort  = filter_input(INPUT_POST, "passwort");
 
-//Später realisiere ich es eventuell mit Datenbanken
-$zugangsdaten = array   
+$zugangsdaten = array                                                           //Logindaten
 (
     "d"     =>  "d",
     "Eddy"  =>  "a",
@@ -17,7 +16,7 @@ $zugangsdaten = array
     "Christoph" => "chris"
 );
 
-switch($cmd)
+switch($cmd)                                                                    //Für die Ajax Requests
 {
   case 'check_login':
   {
@@ -36,7 +35,7 @@ switch($cmd)
   }
 }
 
-function check_login()
+function check_login()                                                          //Funktion für das Einloggen
 {
     global $zugangsdaten, $post_username, $post_passwort;
     $err_string = "";
@@ -62,7 +61,7 @@ function check_login()
     }
 }
 
-function create_entry()
+function create_entry()                                                         //Funktion für das erstellen einer Nachricht.
 {
     //Diese Version speichert neuen Inhalt am Anfang der Datei
     $nachricht  = filter_input(INPUT_POST, "message");
@@ -89,7 +88,7 @@ function create_entry()
         $full_string    .= "<td class='inhalt'>".$nachricht."</td>";
         $full_string    .= "</tr>\n";
 
-        file_put_contents ($dateiname, $full_string, FILE_APPEND);
+        file_put_contents ($dateiname, $full_string, FILE_APPEND);              //Die Nachrichten werden hier in der chat_content.php gespeichert.
     }
     else
     {
@@ -97,7 +96,7 @@ function create_entry()
     }
 }
 
-function convert_to_smiley($nachricht)
+function convert_to_smiley($nachricht)                                          //Funktion für die Smilies
 {
     //schule ist heute mal wieder voll geil kappa, kunst ist das beste fach kappaross
 		

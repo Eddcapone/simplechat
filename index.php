@@ -1,3 +1,4 @@
+<!--Startseite des Chats, hier kann man sich einloggen.-->
 <!DOCTYPE html>
 
 <?php
@@ -27,7 +28,7 @@
 
     <div class="smpchtnightmode" id="smpchtnightmode" onclick="">Nightmode</div>
     <div class="col-lg-4 col-lg-offset-4" id="main">
-        <div id="überschrift">
+        <div id="ueberschrift">
             <h1> Login </h1>
         </div>
         <div id="login_box">

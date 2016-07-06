@@ -1,8 +1,9 @@
+//Funktion für das Senden einer Nachricht.
 function send_message()
 {
     $nachricht = $("input[name=nachricht]").val();
 
-    if ($nachricht != "")       //Nachrichten nur abschicken wenn diese nicht leer sind.
+    if ($nachricht != "")                                                       //Nachrichten nur abschicken wenn diese nicht leer sind.
     {
         $("div#login_error").css("display","none");
 
@@ -19,7 +20,7 @@ function send_message()
             }
         );
     }
-    else
+    else                                                                        //Auslöser für die "Leere Nachricht!" Fehlermeldung.
     {
         $("div#login_error").css("display","block");
     }

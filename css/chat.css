@@ -1,10 +1,11 @@
+/*CSS Angaben, die speziell für die chat.php notwendig sind.*/
 img.emoticon {
     width: 18px;
     height: 24px;
 }
 
 div#logout,#smpchtnightmode, #smpchtautoscroll {
-    color: var(--text);
+    color: var(--text);                                                         /*Auch hier werden die Variablen vom dayStyle und nightStyle verwendet.*/
     background-color: var(--mainco); 	
     border: solid 1px var(--accentco);
     box-shadow: inset 1px 1px 2px 0 var(--secndco);	
@@ -12,7 +13,7 @@ div#logout,#smpchtnightmode, #smpchtautoscroll {
 
 }
 
-div#smpchtautoscroll:hover {
+div#smpchtautoscroll:hover {                                                    /*Das tritt in kraft, wenn die Maus über den div-Elementen ist, die als Button verwendet werden.*/
     background-color:var(--text);
     color: var(--mainco);
  }
@@ -32,7 +33,7 @@ div#smpchterrorbutton:hover {
     color: var(--mainco);
  }
  
-div.smpchtnightmode {
+div.smpchtnightmode {                                                           /*Das CSS für die div-Elemente, die als Button benutzt werden*/
     font-size: 90%;
     position: absolute;
     right: 69px;
@@ -74,7 +75,7 @@ div.smpchterrorbutton {
     cursor: pointer;
 }
 
-input[type=text] {
+input[type=text] {                                                              /*CSS für Eingabefelder.*/
     width: 1350px;
 }
 
