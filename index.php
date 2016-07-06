@@ -1,3 +1,4 @@
+<!--Startseite des Chats, hier kann man sich einloggen.-->
 <!DOCTYPE html>
 
 <?php

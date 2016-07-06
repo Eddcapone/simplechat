@@ -1,4 +1,5 @@
-<?php include "session.php"?>
+<!--Hier wird der Chatinhalt gespeichert.-->
+<?php include "session.php"; ?>                                                 <!--Verhindert Zugriff ohne eingeloggt zu sein.-->
 <tr></td><td>&nbsp;02:28:38&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>!</td></tr>
 <tr></td><td>&nbsp;02:28:38&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>"</td></tr>
 <tr></td><td>&nbsp;02:28:39&nbsp;</td><td id='chat_entry'><strong>Joel&nbsp;:</strong><td class='inhalt'>§</td></tr>
