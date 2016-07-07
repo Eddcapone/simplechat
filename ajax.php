@@ -65,7 +65,7 @@ function create_entry()                                                         
 {
     $nachricht  = filter_input(INPUT_POST, "message");
     $nachricht  = strip_tags($nachricht);
-    $name	= $_SESSION['username'];
+    $name		= $_SESSION['username'];
 
     $uhrzeit 	= date('h:i:s', time());
 
@@ -82,7 +82,7 @@ function create_entry()                                                         
         $dateiname      = "chat_content.php";
 
         $full_string    = "<tr>";
-        $full_string    .= "</td><td>&nbsp;".$uhrzeit."&nbsp;</td>";
+        $full_string    .= "<td>&nbsp;".$uhrzeit."&nbsp;</td>";
         $full_string    .= "<td id='chat_entry'><strong>".$name."&nbsp;:</strong>";
         $full_string    .= "<td class='inhalt'>".$nachricht."</td>";
         $full_string    .= "</tr>\n";
