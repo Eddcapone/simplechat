@@ -83,7 +83,7 @@ function create_entry()                                                         
 
         $full_string    = "<tr>";
         $full_string    .= "<td>&nbsp;".$uhrzeit."&nbsp;</td>";
-        $full_string    .= "<td id='chat_entry'><strong>".$name."&nbsp;:</strong>";
+        $full_string    .= "<td id='chat_entry'><strong>".$name."&nbsp;:</strong></td>";
         $full_string    .= "<td class='inhalt'>".$nachricht."</td>";
         $full_string    .= "</tr>\n";
 
